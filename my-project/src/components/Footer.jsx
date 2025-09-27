@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div>
              <div className="bg-black w-full sm:w-full ">
-                    <div className="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-gray-400 xl:pl-14 xl:pr-0  ">
+                    <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 text-gray-400 ">
                        <div className="px-2 py-8">
                             <h1 className="text-xl text-white mb-2">CS — Ticket System</h1>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>

@@ -33,8 +33,8 @@ function App() {
 
   // --- Click Completed Button ---
   const handleComplete = (ticket) => {
-    setTaskList(taskList.filter((t) => t.id !== ticket.id)); // remove from Task Status
-    setResolvedList([...resolvedList, ticket]); // add to Resolved List
+    setTaskList(taskList.filter((t) => t.id !== ticket.id)); // Remove from Task Status
+    setResolvedList([...resolvedList, ticket]); // Add to Resolved List
     setInProgressCount(inProgressCount - 1);
     setResolvedCount(resolvedCount + 1);
     toast.info(`Ticket "${ticket.title}" completed!`);
@@ -45,37 +45,55 @@ function App() {
       <Navbar />
 
       {/* Banner */}
-      <div className="bg-gray-300">
-        <div className="container mx-auto xl:pl-14 xl:pr-0 sm:mx-0">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 text-center py-6">
-            {/* In Progress */}
-            <div className="bg-[url('/assets/vector1.png')] w-full lg:w-[600px] h-52 bg-center bg-cover bg-[#422AD5] flex items-center justify-center rounded-lg">
-              <div className="flex flex-col">
-                <h1 className="text-white text-2xl p-1">In-Progress</h1>
-                <h1 className="text-white text-2xl p-1 font-bold">
-                  {inProgressCount}
-                </h1>
-              </div>
-            </div>
+   
+<div className="bg-gray-200"> 
+  <div className="container mx-auto px-4">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 text-center py-6">
+      
+      {/* In Progress */}
+      <div 
+        className="relative flex-1 max-w-[600px] h-52 flex items-center justify-center rounded-lg text-white"
+        style={{
+          backgroundImage: "linear-gradient(to right, #422AD5, #6A5AE0)",
+        }}
+      >
+        {/* Background image as overlay */}
+        <img 
+          src="/assets/vector1.png" 
+          alt="bg" 
+          className="absolute top-0 left-0 w-full h-full object-center opacity-100 rounded-lg" 
+        />
 
-            {/* Resolved */}
-            <div
-              className="w-full lg:w-[600px] h-52 flex items-center justify-center bg-center bg-cover rounded-lg"
-              style={{
-                backgroundImage:
-                  "linear-gradient(to right, rgba(84, 207, 104, 0.7), rgba(0, 130, 122, 0.7)), url('/assets/vector1.png')",
-              }}
-            >
-              <div className="flex flex-col">
-                <h1 className="text-white text-2xl p-1">Resolved</h1>
-                <h1 className="text-white text-2xl p-1 font-bold">
-                  {resolvedCount}
-                </h1>
-              </div>
-            </div>
-          </div>
+        <div className="relative flex flex-col">
+          <h1 className="text-2xl p-1">In-Progress</h1>
+          <h1 className="text-2xl p-1 font-bold">{inProgressCount}</h1>
         </div>
       </div>
+
+      {/* Resolved */}
+      <div 
+        className="relative flex-1 max-w-[600px] h-52 flex items-center justify-center rounded-lg text-white"
+        style={{
+          backgroundImage: "linear-gradient(to right, #54CF68, #00827A)",
+        }}
+      >
+        {/* BG overlay */}
+        <img 
+          src="/assets/vector1.png" 
+          alt="bg" 
+          className="absolute top-0 left-0 w-full h-full object-center opacity-100 rounded-lg" 
+        />
+
+        <div className="relative flex flex-col">
+          <h1 className="text-2xl p-1">Resolved</h1>
+          <h1 className="text-2xl p-1 font-bold">{resolvedCount}</h1>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 
       {/* Tickets Section */}
       <Suspense fallback={<span className="loading loading-spinner loading-xl"></span>}>

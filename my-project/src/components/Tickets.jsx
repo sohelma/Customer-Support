@@ -9,10 +9,10 @@ const Tickets = ({ tPromise, onTicketClick, taskList, resolvedList, onComplete }
   );
 
   return (
-    <div className="bg-gray-300 py-5">
-      <div className="container max-w-[1230px] mx-auto flex gap-4">
+    <div className="bg-gray-200 py-5">
+      <div className="container mx-auto px-4 lg:flex gap-4">
         {/* Left Side: Customer Tickets 75% */}
-        <div className="w-3/4">
+        <div className="lg:w-3/4">
           <h1 className="text-xl font-bold mb-4">Customer Tickets</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {customerTickets.map((tkt) => (
@@ -24,7 +24,7 @@ const Tickets = ({ tPromise, onTicketClick, taskList, resolvedList, onComplete }
                 <div className="flex justify-between">
                   <h1 className="text-lg font-semibold">{tkt.title}</h1>
                   <button
-                    className={`w-24 rounded-md ${
+                    className={`w-24 rounded-md font-semibold ${
                       tkt.status === "Open"
                         ? "text-green-600 bg-green-200"
                         : "text-amber-600 bg-amber-200"
@@ -38,7 +38,14 @@ const Tickets = ({ tPromise, onTicketClick, taskList, resolvedList, onComplete }
                 </p>
                 <div className="flex justify-evenly text-sm">
                   <p>{tkt.id}</p>
-                  <p>{tkt.priority}</p>
+                      <p className={`w-24 rounded-md font-bold ${
+                      tkt.priority === "Low"
+                        ? "text-green-400"
+                        : tkt.priority === "High"
+                        ? "text-red-600"
+                        : "text-amber-400"
+                    }`}
+>{tkt.priority}</p>
                   <p>{tkt.name}</p>
                   <span className="flex items-center gap-1">
                     <SlCalender /> {tkt.date}
@@ -50,22 +57,22 @@ const Tickets = ({ tPromise, onTicketClick, taskList, resolvedList, onComplete }
         </div>
 
         {/* Right Side: 25% Task Status + Resolved List */}
-        <div className="w-1/4 flex flex-col gap-5">
+        <div className=" lg:w-1/4 flex flex-col gap-5">
           {/* Task Status (top) */}
-          <div className="border-2 border-green-600 p-3 rounded">
+          <div className="p-3 rounded">
             <h1 className="text-xl font-bold mb-4">Task Status</h1>
             {taskList.length === 0 ? (
               <p className="text-gray-600">No tasks in progress.</p>
             ) : (
               taskList.map((task) => (
-                <div key={task.id} className="mb-3 p-2 rounded shadow">
+                <div key={task.id} className="mb-3 p-2 rounded shadow bg-white">
                   {/* Ticket Title */}
                   <div className="bg-white text-black p-2 rounded font-semibold mb-2">
                     {task.title}
                   </div>
                   {/* Completed Button */}
                   <button
-                    className="w-full bg-green-500 text-white p-2 rounded"
+                    className="w-full bg-green-600 text-white p-2 rounded"
                     onClick={() => onComplete(task)}
                   >
                     Completed
@@ -82,7 +89,7 @@ const Tickets = ({ tPromise, onTicketClick, taskList, resolvedList, onComplete }
               <p className="text-gray-600">No resolved tickets yet.</p>
             ) : (
               resolvedList.map((task) => (
-                <div key={task.id} className="mb-2 p-2 bg-white rounded shadow">
+                <div key={task.id} className="mb-2 p-2 bg-[#E0E7FF] rounded shadow">
                   {task.title}
                 </div>
               ))

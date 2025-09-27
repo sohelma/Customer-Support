@@ -4,10 +4,10 @@ const Navbar = () => {
     return (
         <div>
              <div className="my-2">
-        <div className="container">
-              <div className="navbar bg-base-100 xl:pl-14 pr-0">
+        <div className="container mx-auto px-4">
+              <div className="navbar bg-base-100">
                 <div className="flex-1">
-                <a className="btn btn-ghost text-xl">CS — Ticket System</a>
+                  <a className="btn btn-ghost text-xl">CS — Ticket System</a>
                 </div>
                 <div className="flex-none hidden md:flex ">
                   <ul className="menu menu-horizontal px-1 gap-2">
