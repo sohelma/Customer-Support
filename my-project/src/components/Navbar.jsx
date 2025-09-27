@@ -17,7 +17,11 @@ const Navbar = () => {
                     <li><a>Blog</a></li>
                     <li><a>Download</a></li>
                     <li><a>Contact</a></li>
-                    <li><button className="btn btn-primary"><i className="fa-solid fa-plus mr-2"></i>New Ticket</button></li>
+                    <li>
+                      <button className="flex items-center px-4 py-2 rounded-md bg-gradient-to-br from-[#632EE3] to-[#9F62F2] text-white">
+                        <i className="fa-solid fa-plus mr-2"></i>New Ticket
+                      </button>
+                    </li>
                     
                     {/* <li className="btn btn-primary"><a><i className="fa-solid fa-plus "></i>New Ticket</a></li> */}
                   </ul>

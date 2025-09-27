@@ -34,7 +34,8 @@ const Tickets = ({ tPromise, onTicketClick, taskList, resolvedList, onComplete }
                   </button>
                 </div>
                 <p className="text-gray-400 text-sm">
-                  Customer is unable to log in to their account...
+                   <p>{tkt.des}</p>
+                 
                 </p>
                 <div className="flex justify-evenly text-sm">
                   <p>{tkt.id}</p>

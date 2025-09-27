@@ -2,6 +2,7 @@
   {
     "title": "Login Issue",
     "id": "TKT-101",
+    "des": "Customer is unable to connect in to their account using ID...",
     "status": "Open",
     "priority": "High",
     "name": "Alice Johnson",
@@ -10,6 +11,7 @@
   {
     "title": "Payment Gateway Error",
     "id": "TKT-102",
+    "des": "Customer is unable to pay in to their account...",
     "status": "In-Progress",
     "priority": "Medium",
     "name": "Bob Smith",
@@ -18,6 +20,7 @@
   {
     "title": "UI Bug on Dashboard",
     "id": "TKT-103",
+    "des": "Customer is unable to connect in to their account dashboard...",
     "status": "Open",
     "priority": "Low",
     "name": "Charlie Davis",
@@ -26,6 +29,7 @@
   {
     "title": "Email Notification Failure",
     "id": "TKT-104",
+    "des": "Customer is unable to connect in to their email account...",
     "status": "Open",
     "priority": "High",
     "name": "Diana Evans",
@@ -34,7 +38,8 @@
   {
     "title": "Server Timeout Issue",
     "id": "TKT-105",
-    "status": "Open",
+    "des": "Customer is unable to connect in to their server...",
+    "status": "In-Progress",
     "priority": "Low",
     "name": "Ethan Brown",
     "date": "2025-09-22"
@@ -42,6 +47,7 @@
   {
     "title": "Password Reset Not Working",
     "id": "TKT-106",
+    "des": "Customer is unable to connect in to their apps with user info...",
     "status": "Open",
     "priority": "Medium",
     "name": "Fiona Clark",
@@ -50,6 +56,7 @@
   {
     "title": "App Crash on Launch",
     "id": "TKT-107",
+    "des": "Customer is unable to connect in to their apps...",
     "status": "Open",
     "priority": "High",
     "name": "George Miller",
@@ -58,6 +65,7 @@
   {
     "title": "Incorrect Billing Amount",
     "id": "TKT-108",
+    "des": "Customer facing mismatch data to connect in to their billing...",
     "status": "In-Progress",
     "priority": "Medium",
     "name": "Hannah Wilson",
@@ -66,7 +74,8 @@
   {
     "title": "Feature Request: Dark Mode",
     "id": "TKT-109",
-    "status": "Open",
+    "des": "Customer is facing trouble to connect in to their feature...",
+    "status": "In-Progress",
     "priority": "Low",
     "name": "Ian Thomas",
     "date": "2025-09-18"
@@ -74,6 +83,7 @@
   {
     "title": "Database Connection Error",
     "id": "TKT-110",
+    "des": "Customer is unable to connect in to their account...",
     "status": "Open",
     "priority": "Low",
     "name": "Julia Anderson",
