@@ -1,0 +1,83 @@
+[
+  {
+    "title": "Login Issue",
+    "id": "TKT-101",
+    "status": "Open",
+    "priority": "High",
+    "name": "Alice Johnson",
+    "date": "2025-09-26"
+  },
+  {
+    "title": "Payment Gateway Error",
+    "id": "TKT-102",
+    "status": "In-Progress",
+    "priority": "Medium",
+    "name": "Bob Smith",
+    "date": "2025-09-25"
+  },
+  {
+    "title": "UI Bug on Dashboard",
+    "id": "TKT-103",
+    "status": "Open",
+    "priority": "Low",
+    "name": "Charlie Davis",
+    "date": "2025-09-24"
+  },
+  {
+    "title": "Email Notification Failure",
+    "id": "TKT-104",
+    "status": "Open",
+    "priority": "High",
+    "name": "Diana Evans",
+    "date": "2025-09-23"
+  },
+  {
+    "title": "Server Timeout Issue",
+    "id": "TKT-105",
+    "status": "Open",
+    "priority": "Low",
+    "name": "Ethan Brown",
+    "date": "2025-09-22"
+  },
+  {
+    "title": "Password Reset Not Working",
+    "id": "TKT-106",
+    "status": "Open",
+    "priority": "Medium",
+    "name": "Fiona Clark",
+    "date": "2025-09-21"
+  },
+  {
+    "title": "App Crash on Launch",
+    "id": "TKT-107",
+    "status": "Open",
+    "priority": "High",
+    "name": "George Miller",
+    "date": "2025-09-20"
+  },
+  {
+    "title": "Incorrect Billing Amount",
+    "id": "TKT-108",
+    "status": "In-Progress",
+    "priority": "Medium",
+    "name": "Hannah Wilson",
+    "date": "2025-09-19"
+  },
+  {
+    "title": "Feature Request: Dark Mode",
+    "id": "TKT-109",
+    "status": "Open",
+    "priority": "Low",
+    "name": "Ian Thomas",
+    "date": "2025-09-18"
+  },
+  {
+    "title": "Database Connection Error",
+    "id": "TKT-110",
+    "status": "Open",
+    "priority": "Low",
+    "name": "Julia Anderson",
+    "date": "2025-09-17"
+  }
+]
+

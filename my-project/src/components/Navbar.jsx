@@ -1,0 +1,32 @@
+import React from 'react';
+
+const Navbar = () => {
+    return (
+        <div>
+             <div className="my-2">
+        <div className="container">
+              <div className="navbar bg-base-100 xl:pl-14 pr-0">
+                <div className="flex-1">
+                <a className="btn btn-ghost text-xl">CS — Ticket System</a>
+                </div>
+                <div className="flex-none hidden md:flex ">
+                  <ul className="menu menu-horizontal px-1 gap-2">
+                    <li><a>Home</a></li>
+                    <li><a>FAQ</a></li>
+                    <li><a>Changelog</a></li>
+                    <li><a>Blog</a></li>
+                    <li><a>Download</a></li>
+                    <li><a>Contact</a></li>
+                    <li><button className="btn btn-primary"><i className="fa-solid fa-plus mr-2"></i>New Ticket</button></li>
+                    
+                    {/* <li className="btn btn-primary"><a><i className="fa-solid fa-plus "></i>New Ticket</a></li> */}
+                  </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+        </div>
+    );
+};
+
+export default Navbar;
